@@ -7,6 +7,10 @@ class TimerList {
         };
     }
 
+    /**
+     * Get max number delay (approximately 24.8 days)
+     * @returns {number}
+     */
     static maxDelay() {
         return 2147483647;
     }
@@ -27,6 +31,8 @@ class TimerList {
 
         if(typeof delay !== 'number')
             throw new Error('delay must be a number');
+
+        console.log(TimerList.maxDelay());
 
         args.unshift(callback, delay);
         this.timers.timeout[name] = setTimeout.apply(this, args);
