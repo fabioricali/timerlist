@@ -60,12 +60,12 @@ describe('timerlist', function () {
             timer.setInterval('myname', (param)=>{
                 console.log('hello', param);
                 done();
-            }, 1000, 'world');
+            }, 1500, 'world');
 
             timer.setInterval('myname', (param)=>{
                 console.log('hello', param);
                 done();
-            }, 1000, 'world');
+            }, 1500, 'world');
 
         });
     });
