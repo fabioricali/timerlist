@@ -36,6 +36,15 @@ timer.setInterval('my timer', ()=>{
 timer.setTimeout('my timer', (param)=>{
     console.log('a param', param);
 }, 2000, 'Hello');
+
+// Destroy timeout timer
+timer.clearTimeout('my timeout');
+
+// Destroy interval timer
+timer.clearInterval('my interval');
+
+// Destroy all timers
+timer.clearAll();
 ```
 
 ### API Documentation
