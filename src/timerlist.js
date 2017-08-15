@@ -71,7 +71,7 @@ class TimerList {
      * @param name {string} timer name
      * @param callback {Function} callback function
      * @param delay=0 {number} delay interval
-     * @param args {...args} optional arguments
+     * @param [args] {...args} optional arguments
      * @example
      * timer.setTimeout('my timer', myListener, 1000);
      */
@@ -90,7 +90,7 @@ class TimerList {
      * @param name {string} timer name
      * @param callback {Function} callback function
      * @param delay=0 {number} delay interval
-     * @param args {...args} optional arguments
+     * @param [args] {...args} optional arguments
      * @example
      * timer.setInterval('my timer', myListener, 1000);
      */

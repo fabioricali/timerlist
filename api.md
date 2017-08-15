@@ -5,8 +5,8 @@
 
 * [TimerList](#TimerList)
     * _instance_
-        * [.setTimeout(name, callback, delay, ...args)](#TimerList+setTimeout)
-        * [.setInterval(name, callback, delay, ...args)](#TimerList+setInterval)
+        * [.setTimeout(name, callback, delay, [...args])](#TimerList+setTimeout)
+        * [.setInterval(name, callback, delay, [...args])](#TimerList+setInterval)
         * [.isTimeoutCalled(name)](#TimerList+isTimeoutCalled) ⇒ <code>boolean</code>
         * [.isIntervalCalled(name)](#TimerList+isIntervalCalled) ⇒ <code>boolean</code>
         * [.getTimers()](#TimerList+getTimers) ⇒ <code>Object</code> \| <code>\*</code>
@@ -20,7 +20,7 @@
 
 <a name="TimerList+setTimeout"></a>
 
-### timerList.setTimeout(name, callback, delay, ...args)
+### timerList.setTimeout(name, callback, delay, [...args])
 Set timeout
 
 **Kind**: instance method of [<code>TimerList</code>](#TimerList)  
@@ -41,7 +41,7 @@ Set timeout
     <td>delay</td><td><code>number</code></td><td><code>0</code></td><td><p>delay interval</p>
 </td>
     </tr><tr>
-    <td>...args</td><td><code>args</code></td><td></td><td><p>optional arguments</p>
+    <td>[...args]</td><td><code>args</code></td><td></td><td><p>optional arguments</p>
 </td>
     </tr>  </tbody>
 </table>
@@ -52,7 +52,7 @@ timer.setTimeout('my timer', myListener, 1000);
 ```
 <a name="TimerList+setInterval"></a>
 
-### timerList.setInterval(name, callback, delay, ...args)
+### timerList.setInterval(name, callback, delay, [...args])
 Set interval
 
 **Kind**: instance method of [<code>TimerList</code>](#TimerList)  
@@ -73,7 +73,7 @@ Set interval
     <td>delay</td><td><code>number</code></td><td><code>0</code></td><td><p>delay interval</p>
 </td>
     </tr><tr>
-    <td>...args</td><td><code>args</code></td><td></td><td><p>optional arguments</p>
+    <td>[...args]</td><td><code>args</code></td><td></td><td><p>optional arguments</p>
 </td>
     </tr>  </tbody>
 </table>
