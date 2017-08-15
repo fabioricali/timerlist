@@ -4,7 +4,13 @@
   "description": "Timerlist is a small module that allows you to have a reference of your timers.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "version:major": "webpack --env.major && npm run-script doc && version-to-tag.sh && npm publish",
+    "version:minor": "webpack --env.minor && npm run-script doc && version-to-tag.sh && npm publish",
+    "version:patch": "webpack --env.patch && npm run-script doc && version-to-tag.sh && npm publish",
+    "build": "webpack --progress",
+    "mocha.test": "mocha test",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "doc": "jsdoc2md --no-gfm src/timerlist.js > api.md"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,6 @@
+/**
+ * @ignore
+ */
 const ERROR_MESSAGE = [
     'name must be a string',
     'callback must be a function',
@@ -6,6 +9,15 @@ const ERROR_MESSAGE = [
 
 class TimerList {
 
+    /**
+     * @constructor
+     * @example
+     * const TimerList = require('timerlist');
+     * const timer = new TimerList();
+     * timer.setTimeout('myTimer', ()=>{
+     *      console.log('my timer is running');
+     * }, 1000);
+     */
     constructor() {
         this.timers = {
             timeout: {},
@@ -60,6 +72,8 @@ class TimerList {
      * @param callback {Function} callback function
      * @param delay=0 {number} delay interval
      * @param args {...args} optional arguments
+     * @example
+     * timer.setTimeout('my timer', myListener, 1000);
      */
     setTimeout(name, callback, delay = 0, ...args) {
         this._createTimer({
@@ -77,6 +91,8 @@ class TimerList {
      * @param callback {Function} callback function
      * @param delay=0 {number} delay interval
      * @param args {...args} optional arguments
+     * @example
+     * timer.setInterval('my timer', myListener, 1000);
      */
     setInterval(name, callback, delay = 0, ...args) {
         this._createTimer({
@@ -114,6 +130,9 @@ class TimerList {
         return this.timers;
     }
 
+    /**
+     * Destroy all timers
+     */
     clearAll() {
         for(let i in this.timers.timeout){
             if(this.timers.timeout.hasOwnProperty(i))
