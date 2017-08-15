@@ -10,6 +10,7 @@
         * [.isTimeoutCalled(name)](#TimerList+isTimeoutCalled) ⇒ <code>boolean</code>
         * [.isIntervalCalled(name)](#TimerList+isIntervalCalled) ⇒ <code>boolean</code>
         * [.getTimers()](#TimerList+getTimers) ⇒ <code>Object</code> \| <code>\*</code>
+        * [.clearAll()](#TimerList+clearAll)
         * [.getTimeout(name)](#TimerList+getTimeout) ⇒ <code>\*</code>
         * [.getInterval(name)](#TimerList+getInterval) ⇒ <code>\*</code>
         * [.clearTimeout(name)](#TimerList+clearTimeout)
@@ -45,6 +46,10 @@ Set timeout
     </tr>  </tbody>
 </table>
 
+**Example**  
+```js
+timer.setTimeout('my timer', myListener, 1000);
+```
 <a name="TimerList+setInterval"></a>
 
 ### timerList.setInterval(name, callback, delay, ...args)
@@ -73,6 +78,10 @@ Set interval
     </tr>  </tbody>
 </table>
 
+**Example**  
+```js
+timer.setInterval('my timer', myListener, 1000);
+```
 <a name="TimerList+isTimeoutCalled"></a>
 
 ### timerList.isTimeoutCalled(name) ⇒ <code>boolean</code>
@@ -115,6 +124,12 @@ Check if an interval was called
 
 ### timerList.getTimers() ⇒ <code>Object</code> \| <code>\*</code>
 Get all timers
+
+**Kind**: instance method of [<code>TimerList</code>](#TimerList)  
+<a name="TimerList+clearAll"></a>
+
+### timerList.clearAll()
+Destroy all timers
 
 **Kind**: instance method of [<code>TimerList</code>](#TimerList)  
 <a name="TimerList+getTimeout"></a>

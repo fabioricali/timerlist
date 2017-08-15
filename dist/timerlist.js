@@ -1,4 +1,4 @@
-// [AIV]  TimerList build version: 1.0.0  
+// [AIV]  TimerList build version: 1.0.1  
  var timerlist =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
