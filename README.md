@@ -71,7 +71,7 @@ See <a href="https://github.com/fabioricali/timerlist/blob/master/api.md">https:
 You can view the changelog <a target="_blank" href="https://github.com/fabioricali/timerlist/blob/master/CHANGELOG.md">here</a>
 
 ## License
-Flak is open-sourced software licensed under the <a target="_blank" href="http://opensource.org/licenses/MIT">MIT license</a>
+TimerList is open-sourced software licensed under the <a target="_blank" href="http://opensource.org/licenses/MIT">MIT license</a>
 
 ## Author
 <a target="_blank" href="http://rica.li">Fabio Ricali</a>
