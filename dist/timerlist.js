@@ -1,6 +1,15 @@
-// [AIV]  TimerList build version: 1.0.2  
- var timerlist =
-/******/ (function(modules) { // webpackBootstrap
+// [AIV]  TimerList build version: 1.1.0  
+ (function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("timerlist", [], factory);
+	else if(typeof exports === 'object')
+		exports["timerlist"] = factory();
+	else
+		root["timerlist"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -153,7 +162,7 @@ var TimerList = function () {
          * @param name {string} timer name
          * @param callback {Function} callback function
          * @param delay=0 {number} delay interval
-         * @param args {...args} optional arguments
+         * @param [args] {...args} optional arguments
          * @example
          * timer.setTimeout('my timer', myListener, 1000);
          */
@@ -181,7 +190,7 @@ var TimerList = function () {
          * @param name {string} timer name
          * @param callback {Function} callback function
          * @param delay=0 {number} delay interval
-         * @param args {...args} optional arguments
+         * @param [args] {...args} optional arguments
          * @example
          * timer.setInterval('my timer', myListener, 1000);
          */
@@ -335,4 +344,5 @@ module.exports = TimerList;
 module.exports._ERROR_MESSAGE = ERROR_MESSAGE;
 
 /***/ })
-/******/ ]); 
+/******/ ]);
+}); 

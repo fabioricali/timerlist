@@ -1,6 +1,6 @@
 {
     "name": "timerlist",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "Timerlist is a small module that allows you to have a reference of your timers.",
     "main": "dist/timerlist.js",
     "scripts": {
