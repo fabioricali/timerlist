@@ -16,7 +16,8 @@ module.exports = {
     output: {
         filename: './dist/timerlist.min.js',
         library: 'timerlist',
-        umdNamedDefine: true
+        umdNamedDefine: true,
+        libraryTarget: 'umd'
     },
     resolve: {
         modules: ['node_modules'],
